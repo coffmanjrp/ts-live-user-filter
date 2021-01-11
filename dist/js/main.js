@@ -64,10 +64,10 @@ function getData() {
 }
 function filterData(searchTerm) {
     listItems.forEach(function (item) {
-        var searchText = item.innerText
+        var matchToText = item.innerText
             .toLowerCase()
             .includes(searchTerm.toLowerCase());
-        if (searchText) {
+        if (matchToText) {
             item.classList.remove('hide');
         }
         else {

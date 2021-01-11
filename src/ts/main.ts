@@ -27,11 +27,11 @@ async function getData() {
 
 function filterData(searchTerm) {
   listItems.forEach((item) => {
-    const searchText = item.innerText
+    const matchToText = item.innerText
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
 
-    if (searchText) {
+    if (matchToText) {
       item.classList.remove('hide');
     } else {
       item.classList.add('hide');
