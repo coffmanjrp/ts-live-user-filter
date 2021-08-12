@@ -75,5 +75,7 @@ function filterData(searchTerm) {
         }
     });
 }
-filter.addEventListener('input', function (e) { return filterData(e.target.value); });
+filter.addEventListener('input', function (e) {
+    return filterData(e.target.value);
+});
 getData();
