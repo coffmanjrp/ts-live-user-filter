@@ -54,7 +54,7 @@ function getData() {
                     results.forEach(function (user) {
                         var li = document.createElement('li');
                         listItems.push(li);
-                        li.innerHTML = "\n      <img src=\"" + user.picture.large + "\" alt=\"" + user.name.first + "\"/>\n      <div class=\"user-info\">\n        <h4>" + user.name.first + " " + user.name.last + "</h4>\n        <p>" + user.location.city + ", " + user.location.country + "</p>\n      </div>\n    ";
+                        li.innerHTML = "\n      <img src=\"".concat(user.picture.large, "\" alt=\"").concat(user.name.first, "\"/>\n      <div class=\"user-info\">\n        <h4>").concat(user.name.first, " ").concat(user.name.last, "</h4>\n        <p>").concat(user.location.city, ", ").concat(user.location.country, "</p>\n      </div>\n    ");
                         result.appendChild(li);
                     });
                     return [2 /*return*/];

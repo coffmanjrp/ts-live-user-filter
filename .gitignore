@@ -105,3 +105,6 @@ typings/
 # eslint setting files
 .eslintrc.js
 .eslintignore
+
+# vscode
+.vscode/
